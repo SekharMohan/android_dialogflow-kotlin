@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DialogFlow</string>
+    <string name="dummy_text">Hello Word!</string>
+    <string name="listen_button_name">Listen</string>
+</resources>
