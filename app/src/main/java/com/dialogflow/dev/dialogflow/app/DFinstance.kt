@@ -1,12 +1,15 @@
 package com.dialogflow.dev.dialogflow.app
 
 import ai.api.AIListener
+import android.view.View.GONE
+import android.view.View.VISIBLE
+import android.widget.ProgressBar
 import android.widget.TextView
 
-class DFinstance(private var txtView: TextView) : AIListener {
+class DFinstance(private var txtView: TextView, private var progressBar: ProgressBar) : AIListener {
 
     override fun onListeningStarted() {
-
+        progressBar.visibility = VISIBLE
     }
 
     override fun onResult(response: ai.api.model.AIResponse?) {
@@ -32,6 +35,7 @@ class DFinstance(private var txtView: TextView) : AIListener {
     }
 
     override fun onListeningFinished() {
+        progressBar.visibility = GONE
     }
 
 }
