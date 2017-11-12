@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createAiConfig(): AIConfiguration {
-        return AIConfiguration("[app_key]",
+        return AIConfiguration("8eb15fcaf41744fdb380ad69c7b6d406",
                 SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System)
     }
